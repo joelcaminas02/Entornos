@@ -54,10 +54,10 @@ public class Main {
             for (i=0, j=0; i<dim; i++) {
                 if (esPrimo[i])
                     primos[j++] = i;
-            }
-            return primos;
-        } else { // max < 2
-            return new int[0];
+                }
+                    return primos;
+                } else { // max < 2
+                     return new int[0];
             // Vector vacío
         }
     }

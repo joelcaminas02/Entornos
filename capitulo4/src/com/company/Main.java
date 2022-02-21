@@ -1,8 +1,16 @@
 package com.company;
+
 import java.util.Scanner;
 
+/**
+ * @author Joel Carrillero Garcia
+ * @version 1.0.4
+ */
 public class Main {
-
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
         System.out.println("Introduce el número para la criba de Erastótenes:");
@@ -22,6 +30,12 @@ public class Main {
     }
 
     // Generar números primos de 1 a max
+
+    /**
+     *
+     * @param max es el maximo al que puede llegar
+     * @return el vectores de primo del numero que introduzcas
+     */
     public static int[] generarPrimos (int max)
     {
         int i,j;
@@ -42,6 +56,7 @@ public class Main {
                         esPrimo[j] = false;
                 }
             }
+
             // ¿Cuántos primos hay?
             int cuenta = 0;
             for (i=0; i<dim; i++) {

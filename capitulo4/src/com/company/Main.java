@@ -17,15 +17,23 @@ public class Main {
         int numero=teclado.nextInt();
         int vector[]=new int[numero];
         System.out.println("\nVector inicial hasta :"+numero);
-        for (int i = 0; i < vector.length; i++) {
-            if (i%10==0) System.out.println();
-            System.out.print(i+1+"\t");
-        }
+        imprimir(vector);
         vector=generarPrimos(numero);
         System.out.println("\nVector de primos hasta:"+numero);
+        imprimirVectorFinal(vector);
+    }
+
+    private static void imprimirVectorFinal(int[] vector) {
         for (int i = 0; i < vector.length; i++) {
             if (i%10==0) System.out.println();
             System.out.print(vector[i]+"\t");
+        }
+    }
+
+    private static void imprimir(int[] vector) {
+        for (int i = 0; i < vector.length; i++) {
+            if (i%10==0) System.out.println();
+            System.out.print(i+1+"\t");
         }
     }
 

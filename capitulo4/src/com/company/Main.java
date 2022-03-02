@@ -22,14 +22,22 @@ public class Main {
         System.out.println("\nVector de primos hasta:"+numero);
         imprimirVectorFinal(vector);
     }
-
+    /**
+     *
+     * @param vector es el array de vectores
+     * @return imprime el array de vectores Finales
+     */
     private static void imprimirVectorFinal(int[] vector) {
         for (int i = 0; i < vector.length; i++) {
             if (i%10==0) System.out.println();
             System.out.print(vector[i]+"\t");
         }
     }
-
+    /**
+     *
+     * @param vector es el array de vectores
+     * @return imprime el array de vectores
+     */
     private static void imprimir(int[] vector) {
         for (int i = 0; i < vector.length; i++) {
             if (i%10==0) System.out.println();
